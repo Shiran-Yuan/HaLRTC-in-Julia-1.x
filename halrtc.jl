@@ -82,8 +82,8 @@ function run(imgname, miss_percent, dims)
     input = zeros(dims[1], dims[2], 3)
     origin = zeros(dims[1], dims[2], 3)
 
-    mask = CartesianIndex{3}[]
-    rev_mask = CartesianIndex{3}[]
+    mask = ci{3}[]
+    rev_mask = ci{3}[]
     for i=1:dims[1]
         for j=1:dims[2]
             c = raw[i, j]
